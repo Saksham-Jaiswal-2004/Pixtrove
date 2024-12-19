@@ -11,6 +11,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      scrollBehavior: {
+        smooth: 'smooth', // You can add custom scroll behavior here
+      },
     },
   },
   plugins: [],

@@ -2,20 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root{
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: #c3b1e1;
+  color: black;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: #1c1c1c;
+  color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
 }

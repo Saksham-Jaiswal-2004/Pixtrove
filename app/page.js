@@ -1,101 +1,38 @@
-import Image from "next/image";
+import Benefits from '@/app/components/Benefits';
+import Features from '@/app/components/Features';
+import Cta from '@/app/components/Cta';
+import Hiw from '@/app/components/Hiw';
+import Testimonials from '@/app/components/Testimonials';
+import Link from 'next/link'
+import "./index.css"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      <div className='h-screen display flex flex-wrap text-left items-end justify-end top-0' id='home'>
+        <div className='lg:w-1/2 w-full h-full px-8 py-14 bottom-0 flex flex-col justify-end'>
+          <div className='my-4'>
+            <h1 className='lg:text-6xl text-5xl my-6'>Pixtrove</h1>
+            <h1 className='lg:text-4xl text-3xl sub'>Your Memories,</h1>
+            <h1 className='lg:text-4xl text-3xl sub'>Perfectly Organized!</h1>
+          </div>
+          <p className='lg:text-xl text-base para'>Say goodbye to photo clutter. Our intelligent system organizes your images, making it simple to browse, search, and enjoy your memories in seconds.</p>
+          <div className='my-8 flex flex-wrap justify-start items-center'>
+            <Link href="/organize" className='lg:p-4 p-3 mx-2 mr-2 rounded-xl button lg:text-lg text-sm'>Let's Organise</Link>
+            <Link href="#hiw" className='lg:p-4 p-3 m-2 rounded-xl Sbutton lg:text-lg text-sm'>How this works</Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className='lg:w-1/2 w-full h-full relative lg:inline-block z-0 hidden '>
+          <img src="https://images.pexels.com/photos/4008852/pexels-photo-4008852.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className='image h-full w-full object-cover'/>
+          <div className='absolute inset-0 bg-black opacity-60'></div>
+        </div>
+      </div>
+      <Benefits/>
+      <Features/>
+      <Hiw/>
+      <Testimonials/>
+      <Cta/>
     </div>
   );
 }

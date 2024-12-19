@@ -1,0 +1,237 @@
+.bg1{
+    background: 0%;
+    color: #F0F2F6;
+}
+
+#navbar {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#navbar.scrolled{
+  background-color: #1c1c1c8a;
+  backdrop-filter: blur(5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #292929;
+  padding: 1em;
+  text-align: center;
+}
+
+.link:hover{
+  color: #d9c9a5;
+}
+
+.button{
+  color: #F0F2F6;
+  background-color: #0047ab;
+}
+
+.button:hover{
+  background-color: #0055cc;
+}
+
+.Sbutton{
+  color: #F0F2F6;
+  background-color: #4d4d4d;
+}
+
+.Sbutton:hover{
+  background-color: #5c5c5c;
+}
+
+.sub{
+  color: #b8b8b8;
+}
+
+.para{
+  color: #d9c9a5;
+}
+
+.para2{
+  color: #d9c9a5;
+}
+
+.para2:hover{
+  color: #fae0a4;
+}
+
+.image{
+  background-color: beige;
+}
+
+.card h1{
+  color: #f0f2f6;
+}
+.card{
+  height: fit-content;
+  width: 350px;
+  margin: 0.7em;
+  padding: 0.5em;
+}
+
+.card2{
+  margin: 1em;
+  padding: 1em;
+}
+
+.card2 h1{
+  color: #d9c9a5;
+}
+
+.card2 p{
+  color: #f0f2f6;
+  text-align: center;
+}
+
+.card3{
+  padding: 1.5em;
+}
+
+.card3 span{
+  color: #b8b8b8;
+}
+
+.card3 h1{
+  color: #F0F2F6;
+}
+
+.card3 p{
+  color: #d9c9a5;
+}
+
+.test{
+  background-color: #4d4d4d9d;
+  border-radius: 1em;
+}
+
+.test h1{
+  color: #d9c9a5;
+  font-size: large;
+  margin: 0.5em;
+}
+
+.test p{
+  color: #F0F2F6;
+}
+
+.test span{
+  color: #d9c9a5;
+}
+
+.icon{
+  border-radius: 2em;
+}
+
+.icon:hover{
+  color: #0055cc;
+}
+
+.full_bg1{
+  background: url("/images/About.jpg") no-repeat center center/cover;
+  backdrop-filter: brightness(10%);
+  position: relative;
+}
+
+.full_bg1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.full_bg2{
+  background: url("/images/Testimonial.jpg") no-repeat center center/cover;
+  background-position: 200px;
+  backdrop-filter: brightness(10%);
+  position: relative;
+}
+
+.full_bg2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+.full_bg3{
+  background: url("/images/Dropper.jpg") no-repeat center center/cover;
+  background-position: 300px;
+  backdrop-filter: brightness(10%);
+  position: relative;
+}
+
+.full_bg3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.bg2{
+  background-color: #1c1c1c;
+}
+
+.bg3{
+  background-color: #4d4d4d9d;
+}
+
+.bg3:hover{
+  background-color: #3d3d3d9d;
+}
+
+.box{
+  border-top: 1px solid #4d4d4d;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.about p{
+  color: #b8b8b8;
+}
+
+.about span{
+  color: #d9c9a5
+}
+
+.bg4{
+  background: url("/images/About1.jpg") no-repeat center center/cover;
+  backdrop-filter: brightness(10%);
+  position: relative;
+}
+.bg4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+.bg5{
+  background: url("/images/About2.jpg") no-repeat center center/cover;
+  backdrop-filter: brightness(10%);
+  position: relative;
+}
+.bg5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
